@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 
-namespace GestionRecursosHumanos.Pages.Beneficio
+namespace GestionRecursosHumanos1.Pages.Beneficio
 {
     public class IndexModel : PageModel
     {
-        private readonly  GestionRecursosContext _context;
+        private readonly GestionRecursosContext _context;
 
         public IndexModel(GestionRecursosContext context)
         {

@@ -1,7 +1,7 @@
 ﻿using GestionRecursosHumanos1.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace GestionRecursosHumanos.Data
+namespace GestionRecursosHumanos1.Data
 {
     public class GestionRecursosContext : DbContext
     {
