@@ -1,3 +1,7 @@
+using GestionRecursosHumanos1.Data;
+using Microsoft.EntityFrameworkCore;
+
+
 namespace GestionRecursosHumanos1
 {
     public class Program
@@ -8,6 +12,11 @@ namespace GestionRecursosHumanos1
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+
+            //
+            builder.Services.AddDbContext<GestionRecursosContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("GestionRecursosDB"))
+                );
 
             var app = builder.Build();
 
