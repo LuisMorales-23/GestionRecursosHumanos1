@@ -10,7 +10,7 @@ namespace GestionRecursosHumanos1.Models
     public class Beneficios
     {
         // variables de prueba sin uso//
-        public int prueba { get; set; }
+
         [Key]
         public int IdBeneficio { get; set; }
 
